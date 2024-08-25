@@ -1,0 +1,47 @@
+@startuml caixa postal
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Usuário|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+:Acessar caixa postal;
+if () then (Caixa de Entrada)
+:Visualizar caixa de entrada;
+
+elseif () then (Caixa de Saída)
+:Vizualizar caixa de saída;
+
+elseif () then(Lixeira)
+:Vizualizar lixeira;
+endif
+
+if ()
+:Selecionar mensagem;
+if()
+:Cancelar seleção;
+stop
+endif
+
+else ()
+repeat :Buscar mensagem;
+repeat while (Mensagem encontrada?) is (Não)
+->Sim;
+endif
+:Visualizar mensagem;
+
+if ()
+:Apagar mensagem;
+else 
+:Responder;
+endif 
+
+end
+
+
+
+@enduml

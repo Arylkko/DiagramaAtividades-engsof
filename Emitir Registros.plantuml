@@ -1,0 +1,33 @@
+@startuml emitir registros
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Usuário|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+:Selecionar tipo de registro;
+if () then (Histórico)
+:Emitir histórico;
+:Emitir histórico]
+else if () then (Histórico com ementas)
+:Emitir histórico com ementas;
+:Histórico com ementas]
+else if () then (Atestado de matrícula)
+:Emitir atestado de matrícula;
+:Atestado de matrícula]
+else if () then (Declaração de vínculo)
+:Emitir declaração de vínculo;
+:Declaração de vínculo]
+else if () then (Emitir boletim)
+:Selecionar ano;
+:Emitir boletim;
+:Boletim]
+endif 
+
+end
+
+@enduml

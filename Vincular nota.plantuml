@@ -1,0 +1,18 @@
+@startuml vincular nota 
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Professor|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+:Selecionar atividade;
+:Vincular nota;
+
+|Sistema|
+:Nota]
+end
+@enduml

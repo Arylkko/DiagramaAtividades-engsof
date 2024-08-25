@@ -1,0 +1,13 @@
+@startuml mobile
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+|Usuário|
+:Acessar modo mobile;
+end

@@ -1,0 +1,14 @@
+@startuml Agenda 
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Usuário|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+:Selecionar turma;
+:Agenda da turma]
+
+@enduml 

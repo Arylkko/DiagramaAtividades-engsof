@@ -1,0 +1,24 @@
+@startuml modulos sistemas e portais
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Usuário|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+:Selecionar tipo de acesso;
+if () then (Módulos)
+:Selecionar módulo desejado;
+:Módulo]
+else if () then (Sistemas)
+:Selecionar sistema desejado;
+:Sistema]
+else if () then (Portais)
+:Selecionar portal desejado;
+:Portal]
+endif 
+
+end

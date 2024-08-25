@@ -1,0 +1,25 @@
+@startuml  atividade 
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Usuário|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif 
+
+|Professor|
+:Enviar conteúdo de atividade;
+
+|Sistema|
+:Atividade]
+
+|Aluno|
+:Enviar atividade completa;
+
+|Professor|
+:Vincular nota;
+end
+
+@enduml

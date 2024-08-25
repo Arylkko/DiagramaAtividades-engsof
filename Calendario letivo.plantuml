@@ -1,0 +1,17 @@
+@startuml calendario
+
+|Sistema|
+start
+if (Usuário está logado?) then (Não) 
+|Professor|
+:Realizar login;
+note left: tem q botar o garfinho aq
+else (Sim)
+endif
+
+:Selecionar ano;
+:Calendário letivo]
+
+
+
+@enduml 
